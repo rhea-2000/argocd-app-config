@@ -8,12 +8,12 @@ spec:
 
   source:
     repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
-    targetRevision: HEAD
+    targetRevision: Head
     path: dev
-  destination: 
+  destination:
     server: https://kubernetes.default.svc
     namespace: myapp
-
+  
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
